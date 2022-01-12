@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400);
+
+* {
+    box-sizing:border-box;
+    font-family: Ubuntu;
+    color:cornflowerblue;
+    
+    
+}
+
+.paragraphs {
+
+    font-size: 1.5em;
+    margin: auto;
+    text-align: left;
+    max-width: 900px;
+    padding: 0 1.5em;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(68, 68, 68);
+    scroll-behavior: smooth;
+}
+
+.nav li {
+    display: inline;
+}
+
+ .nav ul {
+     margin: 0;
+ }
+
+ nav a {
+     padding: .5em;
+     color: white;
+     text-decoration: none;
+ }
+
+ .main-nav {
+     text-align: center;
+     font-size: 1.5em;
+     font-weight: lighter;
+     border-bottom: 5px solid rgba(153, 141, 160);
+ }
+ 
+ .main-nav li {
+     padding: 0% 5%;
+ }
+ .nav a:hover {
+     background-color: rgba(131, 0, 207, 0.3);
+ }
+
+ .main-header {
+    background-image: url("images/heart.jpg");
+    background-size: cover;
+    padding-bottom: 30px;
+    text-shadow: 3px 3px 2px rgb(40, 35, 114);
+    
+}
+
+.section-header {
+    font-family: monospace;
+    font-weight: normal;
+    color: violet;
+    text-align: center;
+    font-size: 2.5em;
+    text-decoration-line: underline;
+    text-shadow: 3px 3px 2px rgb(14, 8, 8);
+}
+
+
+.my-name {
+    text-align: center;
+    margin: 0%;
+    font-size: 4em;
+    font-family: monospace;
+    color: violet;
+}
+
+.my-name-large {
+    font-size: 6em;
+}
+
+
+
+.content-section {
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.image-grid-section {
+    display: block;
+    text-align: center;
+
+}
+
+.container {
+    max-width: 900px;
+    margin: 0% auto;
+    padding: 0 1.5em;
+}
+
+
+.content-image {
+    margin: auto;
+    display: block;
+    border-radius: 10%;
+}
+.main-footer {
+    background-color: rgb(27, 0, 0);
+    color: violet;
+    padding: .25em 0;
+
+}
+
+.top-images {
+    height: 300px;
+    width: 200px;
+    margin: auto;
+
+}
+
+.email-btn {
+
+    background-color: #272727; 
+    font-size: 1em;  
+    font-weight: bold; 
+    text-decoration: none; 
+    padding: 5px 5px; 
+    color: #41a9ff; 
+    border-radius: 5px; 
+    display: inline-block; 
+    mso-padding-alt: 0;
+    
+}
+
+
