@@ -71,9 +71,10 @@ html, body {
 }
 
 .subheader {
+    color: violet;
     font-family: monospace;
     font-weight: normal;
-    font-size: 1.9em;
+    font-size: 2em;
     text-shadow: 2px 2px 2px rgb(14, 8, 8);
     padding: 0 1.5em;
     text-decoration-line: underline;
@@ -228,6 +229,30 @@ html, body {
 
 }
 
+.neon-button-small {
+    color: var(--clr-neon);
+    font-size:1.8rem;
+    display: inline-block;
+    text-decoration: none;
+    border: var(--clr-neon) 0.1em solid; /*refers to --clr-neon*/
+    padding: 0.25em .5em;
+    border-radius: 0.25em;
+    margin-right: 2rem;
+    
+    margin-bottom: 1rem;
+
+    text-shadow: 
+    0 0 0.125em hsl(0 0% 100% / 0.6), 
+    0 0 0.45em currentColor;
+
+    box-shadow: inset 0 0 .5em 0 var(--clr-neon),
+    0 0 .5em 0 var(--clr-neon);
+
+    /*to get it to snow with the reflection*/
+    position: relative; 
+
+}
+
 .neon-button::before {
     pointer-events: none;
     content: "";
@@ -248,7 +273,23 @@ html, body {
     opacity: 0.8;
 }
 
+
+
 .neon-button::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*background: var(--clr-neon);*/
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    opacity: 0;
+    transition: opacity 100ms linear;
+
+
+}
+.neon-button-small::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -276,3 +317,11 @@ html, body {
 .neon-button:hover::after {
     opacity: 1;
 }
+.neon-button-small:hover::before {
+    opacity: 1;
+}
+
+.neon-button-small:hover::after {
+    opacity: 1;
+}
+
